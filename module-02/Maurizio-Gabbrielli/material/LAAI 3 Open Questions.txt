@@ -1,0 +1,107 @@
+LAAI 3 Open Questions
+
+Q1:Turing Machine Questions
+
+1.  L = {w ∈ {0, 1}* ∣ w contains an even number of 0s and an odd number of 1s}
+2.  L = {w ∈ {0, 1}* ∣ w contains an even number of 1s and an odd number of 0s}
+3.  L = {w ∈ {0, 1}* ∣ w contains an even number of 0s and an odd number of 1s}
+4.  L = {w ∈ {0, 1}* ∣ if 00 is a subsewuence of w, then it is folowed by at least two 1's in w}
+5.  L = {w ∈ {0, 1}* ∣ if 01 occurs in w, then all characters to the right of it are 0's}
+6.  L = {w ∈ {0, 1}* ∣ every 1 occurring in w is immediately followed by a 0}
+7.  L = {w ∈ {0, 1}* ∣ between any occurences of 1 in w there is an even number of 0s}
+8.  L = {w ∈ {0, 1}* ∣ if 0^k is a subsequence of w, then k<=2}
+9.  L = {w ∈ {0, 1}* ∣ between any pair of occurrences of 0 in w there are an odd number of 1's}
+10. L = {w ∈ {0, 1}* ∣ w starts with a 1 and ends with a 1}
+11. L = {w ∈ {0, 1}* ∣ w contains 10 as a substring}
+12. L = {w ∈ {0, 1}* ∣ the number of of occurrences of the symbol 0 in w is atmost 4 times}
+13. L = {w ∈ {0, 1}* ∣ between any pair of occurrences of 0 in w there are an even number of 1's}
+
+Q2:Prove L is in NP
+1.You are required to prove that the following problem L is in NP. To do that, you can
+give a TM or define some pseudocode. The language L includes precisely those
+binary strings which are encodings of pairs in the form (G, k) where G is an undirected graph and k is a natural number such that there is a subset S of the set
+of edges of G having cardinality at most k and such that any node of G occurs in at
+least one of the edges in S.
+
+2. You are required to prove that the following problem L is in N P. To do that, you can
+give a TM or define some pseudocode. The language L includes precisely those
+binary strings which are encodings of pairs in the form (G, n) where G is an undirected graph having a path which goes through n distinct edges of G, going through each of them exactly once. Can you say anything else about the complexity of this problem?
+
+3. You are required to prove the function f is in FP. To do that, you can
+give a TM or define some pseudocode. The function is one that given two lists L= L1...Ln and P= P1....Pn of rational numbers, returns their scalar products
+
+4. You are required to prove that the following problem L is in N P. To do that,
+you can give a TM or define some pseudocode. The language L includes
+precisely those binary strings which are encodings of pairs in the form (G, k)
+where G is a graph and k is a natural number, such that the nodes of G can be
+assigned a natural number between 1 and k in such a way that nodes which are
+linked by an edge are assigned distinct natural numbers. 
+
+5.  You are required to prove that the following problem L is in NP. To do that, you can give a TM or define some pseudocode. The language L includes precisely those binary strings which are encodings of pairs in the form (G, t) where G is a graph and t is a natural number, such that the nodes of G can be
+partitioned into at most t sets in such a way that nodes which are part of distinct sets are not linked by any edge.
+...or equivalently
+You are required to prove that the following problem L is in NP. To do that,
+you can give a TM or define some pseudocode. The language L includes
+precisely those binary strings which are encodings of pairs in the form (G, k)
+where G is a graph and k is a natural number, such that the nodes of G can be
+assigned a natural number between 1 and k in such a way that nodes which are
+linked by an edge are assigned distinct natural numbers.
+
+6. You are required to prove that the following problem L is in NP . To do that, you can give a TM or define some pseudocode. The language L includes precisely those binary strings which are encodings of triples in the form (n, m, k) where n and m are natural numbers which have at least k prime factors in common.
+
+7. You are required to prove that the following function f is in FP. To do that, you can give a TMs or define some pseudocode. The function is one that, given two strings v, w e S* checks whether v is a substring of w, namely whether w contains an exact occurrence of v.
+
+8. You are required to prove that the following problem is in NP. To do that, you proceed as you
+prefer (e.g. by giving a NTM, or by giving certificates and algorithms). The problem is one that,
+given a natural number n and a set of natural numbers D, checks whether n is a product of distinct elements from D.
+
+9. You are required to prove that the following problem L is in NP. To do that, you can give a
+N TM or define some pseudocode. The problem is one that, given a natural number n, checks
+whether n is a sum of powers of 3. (3^0 is not allowed as the problem would be trivial)
+
+10. You are required to prove that the following problem L is in N P. To do that, you can give a TM or define some pseudocode. The language L includes precisely those binary strings which are encodings of pairs of strings (t, z) both of them from the alphabet S= {0,1,2...,9} such that s is an anagram of t, i.e., the former can be obtained from the latter by changing the order of the letters.
+
+
+
+
+Q3: Find complexity class:
+
+1. We studied the CLIQUE problem. You are required to classify the subset THREECLIQUE problem consisting of all pairs (G,3). To which class does THREECLIQUE belong?
+
+2. We studied the classes SAT, and 3SAT, and 2SAT. You are required to classify the problem ISAT containing all (and only) the
+satisfiable ICNFs. In particular, to which complexity class does 1SAT belong? Prove your claim.
+(or equivalently....)
+Consider the following problem:
+1SAT {A | A is a satisfiable 1CNF}.
+To which complexity class does 1SAT belong? Prove your claim.
+
+3. Consider the following problem:
+4SAT = {A | A is a satisfiable 4CNF}.
+To which complexity class does 4SAT belong? Prove your claim.
+
+4. We studied the problem CLIQUE. You are required to classify the subset THREECLIQUE of CLIQUE consisting of all the pairs (G, 3). To which class does THREECLIQUE belong?
+
+5. The vertex cover problem is a well-known NP-complete problem defined as follows: given a graph G and a positive integer k. determine if G has a vertex cover of size at most k, where a vertex cover of a graph is a subset S of the set of G's edges such that every vertex is among the endpoints of an edge in S. Now, consider the following variation to the problem: given G. k and d. determine if G has a d-vertex cover of size at most k, where a d-vertex cover of G is a subset S of G's nodes such that every vertex is of the endpoints of at least d distinct edges in S. To which complexity class does this new problem belong? Prove your claim.
+
+6. We studied the problem INDSET. You are required to classify the subset ONEINDSET of INDSET whose elements are pairs G, k such that G is an undirected graph such that every node is contained in at most one edge, and k is a natural number. To which complexity does ONEINDSET belong.
+
+7. The "Principia Mathematica" is a book by the philosopher Bertrand Russell, published between 1910 and 1913, in which many theorems about mathematics are stated and proved to hold. Let PP be the set of theorems in "Principia Mathematica", appropriately encoded in a succinct way as finite binary strings. To which complexity class does PP belong? Prove your claim.
+
+8. The most popular textbook on Al is the one by Russell And Norvig, called "Artificial
+Intelligence: a Modern Approach". The algorithms presented in it includes many algorithms used in various branches of AI. Let RN be the set of algorithms explained in the book, appropriately encoded in a succinct way as finite binary strings. To which complexity class does RN belong? Prove your
+claim.
+
+9. The SubsetSum problem is a well-known NP-complete problem defined as follows:
+given a finite sequence (n1,...,nk) of natural numbers and a natural number m,
+determine if there is a subset I of {1,....k} with 	Σ_i∈I ni = m. Now, consider the following variation to the problem: given a finite sequence (n1,...,nk) of natural numbers and natural numbers m and p, determine if there is a subset I of {1,....k} with 	Σ_i∈I ni = m and with 	Σ_i∉I ni = p.
+To which complexity class does this new problem belong? Prove your claim.
+
+10. In the following, we work with graphs such that to each vertex v is associated a natural number n_v, called its weight. Consider now the following variation on the independent set problem, called INDSETVAR. Elements of it are pairs (G, k) such that the graph G has an independent set VV such that the sum of the weights of the nodes in W is at least k. To which complexity class does this new problem belong? 
+
+11. The degree of a node in an undirected graph is simply the number of edges which
+has this node as one of its endpoints. The degree of an undirected graph is the maximum degree of its nodes. Consider the problem:
+HAMPATHVAR = {G | G is a graph of degree 2 having an Hamiltonian path. }.
+What's the complexity of HAMPATHVAR.
+
+
+
